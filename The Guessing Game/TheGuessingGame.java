@@ -4,10 +4,10 @@ public class TheGuessingGame{
 		Scanner scan=new Scanner(System.in);
 		GuessGame game=new GuessGame();
 		char ch='y';
-		while(ch=='y'){
+		while(ch=='y'||ch=='Y'){
 			game.startGame();
 			if(!game.foundWinner){
-				System.out.println("No one won :(");
+				System.out.println("No one won, Better luck next time :)");
 			}
 			System.out.println("Wanna, Play Again??(y/n)");
 			ch=scan.next().charAt(0);
